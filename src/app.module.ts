@@ -3,10 +3,10 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { typeOrmConfig } from './config';
-import { UsersModule } from './models/users/user.module';
-import { StoresModule } from './models/stores/store.module';
-import { ItemsModule } from './models/items/item.module';
-import { OrdersModule } from './models/orders/order.module';
+import { UsersModule } from './modules/user.module/user.module';
+import { StoresModule } from './modules/store.module/store.module';
+import { ItemsModule } from './modules/item.module/item.module';
+import { OrdersModule } from './modules/order.module/order.module';
 
 @Module({
   imports: [

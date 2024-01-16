@@ -1,11 +1,13 @@
-import { Body, Controller, Get, Param, Post, Put, Req, Request } from "@nestjs/common";
+import { Body, Controller, Get, Param, Post, Put, Render, Req, Request } from "@nestjs/common";
 import { UsersService } from "./user.service";
-import { User } from "./user.entity";
+import { User } from "../../models/user.entity";
 
 @Controller('users')
 export class UsersController {
     constructor(private userService: UsersService) { }
     @Get()
+    @Render('src\views\signup.view.ejs')
+
     async getAll() {
         return this.userService.findAll()
     }

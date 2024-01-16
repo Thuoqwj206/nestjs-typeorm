@@ -1,6 +1,6 @@
 import { BaseEntity, Column, Entity, JoinTable, ManyToMany, ManyToOne, OneToMany, PrimaryGeneratedColumn } from "typeorm";
-import { User } from "../users/user.entity";
-import { Item } from "../items/item.entity";
+import { User } from "./user.entity";
+import { Item } from "./item.entity";
 
 @Entity('orders')
 export class Order extends BaseEntity {

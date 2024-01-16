@@ -1,5 +1,5 @@
 import { BaseEntity, Column, Entity, ManyToMany, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
-import { Store } from "../stores/store.entity";
+import { Store } from "./store.entity";
 
 @Entity('items')
 export class Item extends BaseEntity {
